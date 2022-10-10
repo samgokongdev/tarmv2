@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\DatatablesController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\SptController;
 use App\Http\Controllers\TunggakanController;
 use App\Models\Tunggakan;
 use Illuminate\Support\Facades\Route;
@@ -21,3 +22,5 @@ use Yajra\Datatables\Datatables;
 Route::resource('/', HomeController::class);
 
 Route::resource('tunggakan', TunggakanController::class);
+
+Route::resource('spt', SptController::class);
